@@ -149,18 +149,17 @@ span {
     100% { opacity: 0; transform: scale(0.5) rotate(360deg); }
   }
 
-  /* Style for laptop content */
-  .laptop-content {
-	display: none;
-  }
-
-  /* Style for mobile message */
-  .mobile-message {
-	display: none;
-	text-align: center;
-	font-size: 24px;
-	color: #ff0000;
-	margin-top: 20%;
-  }
+@media screen and (max-width: 1100px) and (max-height: 2500px) {
+    .laptop-content {
+        display: none !important;
+    }
+    .mobile-message {
+        display: block !important;
+        text-align: center;
+        font-size: 24px;
+        color: red;
+        margin-top: 20%;
+    }
+}
 
 
