@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universe of Love</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Love Letter</title>
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<script src="app.js" defer></script>
 
 </head>
 <body>
-    <section class="heart-section">
-        <div class="overlay-text extrude-text">
-            <h1 id="headline">Happy 6-Month Anniversary!</h1>
-            <p id="message">Every moment with you is magical ❤️</p>
-        </div>
-        <canvas></canvas>
-    </section>
-    <section>
-        LOVE
-    </section>
-    <section style="background: #ff4081;">Section 1</section>
-    <section style="background: #4CAF50;">Section 2</section>
-    <section style="background: #2196F3;">Section 3</section>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="hero-section">
+				<div class="image-container">
+					<img src="img/hero.png" alt="Image" id="tiltImage">
+				</div>
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						
+						<h1 class="main-title glowing-text" id="glowingText"><span>❤️✨😘</span>cheers for six months together !</h1>
+					</div>
+				</div>
+			</header>
+		
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							<img class="gallery__item" src="img/work/1.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/2.jpg" alt="Alt">
+		
+							<div class="text-block gallery__item tilt-text" id="tiltText">
+								<h2 class="text-block__h">Feels A Lot More Than Good 🤪</h2>
+								<p class="text-block__p">Being with you feels like I'm with a child, a peer, a mom & a grandma at the same time. This might be the reason why I'm this much addicted to you. To put you before everything I have & I believe. I actually feel like you're everything that I wanted my partner to be + a lottt more 🌝. It's so comfortable being with you cus I can tell you anything knowing that I won't be judged. I think being honest with each other is the main thing that keeps us going 😗</p>
+							</div>
+		
+							<img class="gallery__item" src="img/work/7.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/9.jpg" alt="Alt">
+
+							<div class="text-block gallery__item tilt-text" id="tiltText">
+								<h2 class="text-block__h">I Want To Promise You. But... 😅</h2>
+								<p class="text-block__p">I want to make a promise with you to not make you cry or upset ever again. But I won't because I know that I can't keep that promise. It's because my DUMBASS is still learning about relationships and the best way it learns is by fucking up things. So if I ever do anything again like that, just remember it's becoming I'm a DUMBASS & just remember that I would never have bad intentions with you 😊. I know it's so immature & irresponsible for me to say something like this. But that's the truth about me. Keep that in your mind 😬</p>
+							</div>
+						
+							<img class="gallery__item" src="img/work/6.jpg" alt="Alt">
+
+							<div class="text-block gallery__item tilt-text" id="tiltText">
+								<h2 class="text-block__h">First I was thinking about giving you something handmade with papers, something like a card. But then I changed my mind and made this. And there's also a little gift for you in the RIGHT SIDE POCKET of your bag 🐨. Thank you for being with me. LOVE YOU LOTSSS 😘 </h2>
+							</div>
+		
+						</div>
+
+						<div data-speed="1.1" class="gallery__right">
+		
+							<div class="text-block gallery__item tilt-text" id="tiltText">
+								<h2 class="text-block__h">You Are So Sooo Amazing ☺️</h2>
+								<p class="text-block__p">Even though I say it all the time, I still don't know actually why I say it. But deep down I believe that you are amazing. Maybe it's because you look me after, care about me like no one does & also maybe because you make me angry equally so 😄. But no matter what, I feel like you're the perfect one for me. The girl who's pretty, smart, cute, kind, innocent, good and just weird enough to be with me ✨
+								</p>
+							</div>
+
+							<img class="gallery__item" src="img/work/3.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/5.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/8.jpg" alt="Alt">
+
+							<div class="text-block gallery__item tilt-text" id="tiltText">
+								<h2 class="text-block__h">Aaaand I'm Sorry 😔😓🥺</h2>
+								<p class="text-block__p">Yep. I'm sorry. Sorry for everything I have done to make you cry & upset up until now, for everything I have done knowingly or unknowingly. And I'm also sorry if I have ever broken your trust and expectations. And I'm also sorry for not being with you in the moments that you need me the most 😖. But I never wanted to anything wrong with you. I know that you know that. I also know that you know that I know that you know that 😅. Accept my sincere apologies.</p>
+							</div>
+							<img class="gallery__item" src="img/work/4.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/10.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/11.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/12.jpg" alt="Alt">
+
+							
+		
+						</div>
+
+						
+
+					</main>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 </body>
 </html>
