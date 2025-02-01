@@ -15,16 +15,8 @@
 	display: none;
   }
 
-@font-face {
-	font-family: raleway-c;
-	src: url(../fonts/raleway-regular.woff2);
-}
-@font-face {
-	font-family: outfit-c;
-	src: url(../fonts/outfit-regular.woff2);
-}
 h1, h2, h3, h4, h5, h6 {
-	font-family: outfit-c;
+	font-family: "Outfit", serif;
 }
 /* will-change */
 .content, .hero, .main-header, .gallery > * {
@@ -33,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
 	background-size: 50px;
 	color: #fafafa;
-	font-family: raleway-c;
+	font-family: "Raleway", serif;
 	overflow-x: hidden;
 	transition: background 3s ease-in-out;
 }
