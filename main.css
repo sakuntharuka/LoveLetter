@@ -159,7 +159,7 @@ span {
         font-size: 24px;
         color: white;
         margin-top: 20%;
-        filter: drop-shadow(6px 6px 0 #000000);
+        filter: drop-shadow(1px 1px 0 #000000);
     }
 }
 
